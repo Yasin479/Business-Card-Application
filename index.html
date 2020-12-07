@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Business Card Application</title>
+</head>
+<body>
+
+  <div class="container">
+
+      <h1 class="heading">Business Card Designer</h1>
+      
+    <div class="content">
+
+      <div class="input">
+
+        <form action="#">
+          <label for="">Company Name</label>
+          <input type="text" id="inputCompany" onkeyup="companyName()">
+          <br>
+          <label for="">Company Message</label>
+          <input type="text" id="inputMsg" onkeyup="companyMsg()">
+          <br>
+          <label for="">Background Color</label>
+          <input type="color" id="backgroundColor" onchange="background()">
+          <br>
+          <label for="">Text Color</label>
+          <input type="color" id="textColor" onchange="color()">
+          <br>
+          <label for="">Text align</label>
+          <input type="button" value="Left" class="btn" onclick="leftAlign()">
+          <input type="button" value="Center" class="btn" onclick="centerAlign()">
+          <input type="button" value="Right" class="btn" onclick="rightAlign()">
+          <br>
+          <label for="">Your Name</label>
+          <input type="text" id="inputName" onkeyup="yourName()">
+          <br>
+          <label for="">Job Title</label>
+          <input type="text" id="inputJob" onkeyup="jobTitle()">
+          <br>
+          <label for="">Email</label>
+          <input type="email" id="inputEmail" onkeyup="email()">
+          <br>
+          <label for="">Telephone Number</label>
+          <input type="tel" id="inputTel" onkeyup="telephoneNumber()">
+          <br>
+          
+          <input type="submit" value="Clear" class="btn clear-btn">
+          <input type="submit" value="Submit" class="btn submit-btn">
+          
+        </form>
+
+      </div>
+    
+      <div class="preview">
+
+        <h1 id="company">Company</h1>
+        <p id="companyMessage">Company Message</p>
+        <hr id="divider">
+        <p id="name">Your Name</p>
+        <p id="job">Job Title</p>
+        <p id="email">Email</p>
+        <p id="tel">Tel.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  
+  
+
+  <script src="./alert.js"></script>
+</body>
+</html>
